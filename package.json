@@ -1,0 +1,30 @@
+{
+  "name": "reactpractice",
+  "version": "1.0.0",
+  "description": "a React.js practice",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^0.14.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsdir": "mkdir -p js",
+    "build-js": "NODE_PATH=. browserify -t [ babelify --presets [ es2015 react ] ] index.jsx > js/app.js",
+    "build-app": "npm run jsdir && npm run build-js",
+    "start": "npm run build-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardMCastrillon/ReactPractice.git"
+  },
+  "keywords": [
+    "React.js"
+  ],
+  "author": "Edward Monsalve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardMCastrillon/ReactPractice/issues"
+  },
+  "homepage": "https://github.com/EdwardMCastrillon/ReactPractice#readme"
+}
