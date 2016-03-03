@@ -1,6 +1,6 @@
 import React from 'react'
 
-class EmpleadoAvatar extends Reac.Component {
+class EmpleadoAvatar extends React.Component {
 
   render() {
     return (
